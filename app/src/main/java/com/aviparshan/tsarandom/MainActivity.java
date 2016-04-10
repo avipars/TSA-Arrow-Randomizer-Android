@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
             public void onAnimationEnd(Animation animation) {
                 left.setVisibility(View.GONE);
                 right.setVisibility(View.GONE);
+                assert tapHere != null;
                 tapHere.setVisibility(View.VISIBLE);
             }
 
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        assert tapHere != null;
         tapHere.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

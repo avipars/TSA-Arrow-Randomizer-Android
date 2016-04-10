@@ -18,22 +18,22 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:background="#0000"
-        android:text="Tap Here"/>
+        android:text="@string/tap_here"/>
 
     <ImageView
         android:id="@+id/left"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
+        android:contentDescription="@string/left_arrow"
         android:src="@drawable/left"
-        android:visibility="gone"
-        />
+        android:visibility="gone"/>
     <ImageView
         android:id="@+id/right"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
+        android:contentDescription="@string/right_arrow"
         android:src="@drawable/right"
-        android:visibility="gone"
-        />
+        android:visibility="gone"/>
 </RelativeLayout>
