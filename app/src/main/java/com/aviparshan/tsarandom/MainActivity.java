@@ -24,7 +24,9 @@ public class MainActivity extends AppCompatActivity {
         final Animation fadeout = new AlphaAnimation(1,0);
         fadeout.setStartOffset(1000);
         fadeout.setDuration(1000);
+        assert left != null;
         left.setAnimation(fadeout);
+        assert right != null;
         right.setAnimation(fadeout);
 
         fadeout.setAnimationListener(new Animation.AnimationListener() {
